@@ -1,0 +1,27 @@
+{
+  "last_timestamp_ns": {
+    "/vins_estimator/odometry": 1403637010601666451, 
+    "/loop_fusion/odometry_rect": 1403637010601666451
+  }, 
+  "started_wall_s": 1793536901.808991, 
+  "pose_frame": "body/IMU", 
+  "ground_truth_used_for_estimation": false, 
+  "sequence": "MH_02_easy", 
+  "load_map": true, 
+  "elapsed_replay_wall_s": 317.0969681739807, 
+  "counts": {
+    "/vins_estimator/odometry": 1510, 
+    "/loop_fusion/odometry_rect": 1510
+  }, 
+  "match_images_published": 635, 
+  "map_name": "clean_20261101_map", 
+  "run_status": "sensor_replay_and_pose_capture_complete", 
+  "process_exit_codes": {
+    "roscore": 0, 
+    "rosbag_record": 0, 
+    "replay": 0, 
+    "vins": 0, 
+    "loop": 0
+  }, 
+  "replay_rate": 0.5
+}

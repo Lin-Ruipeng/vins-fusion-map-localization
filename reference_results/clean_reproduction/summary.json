@@ -1,0 +1,128 @@
+{
+  "status": "passed",
+  "run_id": "clean_20261101",
+  "started_at": "2026-11-01T12:21:46.757213+00:00",
+  "started_wall_s": 1793535706.7571845,
+  "mode": "full",
+  "map_name": "clean_20261101_map",
+  "mh01_run": "clean_20261101_mh01",
+  "mh02_run": "clean_20261101_mh02",
+  "stages": [
+    {
+      "name": "doctor",
+      "command": [
+        "python3",
+        "scripts/doctor.py",
+        "--json",
+        "/home/folin/\u6587\u6863/Code/\u5730\u56fe\u5339\u914d/vins_fusion_lab/validation/clean_worktree/results/clean_20261101/doctor.json"
+      ],
+      "log": "results/clean_20261101/doctor.log",
+      "started_at": "2026-11-01T12:21:46.757456+00:00",
+      "status": "passed",
+      "exit_code": 0,
+      "elapsed_s": 0.2507483959197998
+    },
+    {
+      "name": "environment_download",
+      "command": [
+        "python3",
+        "scripts/download_artifacts.py",
+        "image"
+      ],
+      "log": "results/clean_20261101/environment_download.log",
+      "started_at": "2026-11-01T12:21:47.008715+00:00",
+      "status": "passed",
+      "exit_code": 0,
+      "elapsed_s": 1.5012710094451904
+    },
+    {
+      "name": "build",
+      "command": [
+        "bash",
+        "scripts/build.sh"
+      ],
+      "log": "results/clean_20261101/build.log",
+      "started_at": "2026-11-01T12:21:48.512780+00:00",
+      "status": "passed",
+      "exit_code": 0,
+      "elapsed_s": 129.30429577827454
+    },
+    {
+      "name": "data",
+      "command": [
+        "bash",
+        "scripts/download_data.sh"
+      ],
+      "log": "results/clean_20261101/data.log",
+      "started_at": "2026-11-01T12:23:57.819820+00:00",
+      "status": "passed",
+      "exit_code": 0,
+      "elapsed_s": 666.7803347110748
+    },
+    {
+      "name": "mh01_build",
+      "command": [
+        "bash",
+        "scripts/run.sh",
+        "build-map",
+        "0.5",
+        "clean_20261101_mh01"
+      ],
+      "log": "results/clean_20261101/mh01_build.log",
+      "started_at": "2026-11-01T12:35:04.602885+00:00",
+      "status": "passed",
+      "exit_code": 0,
+      "elapsed_s": 396.40120935440063
+    },
+    {
+      "name": "map_validate",
+      "command": [
+        "python3",
+        "scripts/validate_map.py",
+        "clean_20261101_map"
+      ],
+      "log": "results/clean_20261101/map_validate.log",
+      "started_at": "2026-11-01T12:41:41.006992+00:00",
+      "status": "passed",
+      "exit_code": 0,
+      "elapsed_s": 0.500809907913208
+    },
+    {
+      "name": "mh02_localization",
+      "command": [
+        "bash",
+        "scripts/run.sh",
+        "mh02",
+        "0.5",
+        "clean_20261101_mh02"
+      ],
+      "log": "results/clean_20261101/mh02_localization.log",
+      "started_at": "2026-11-01T12:41:41.510611+00:00",
+      "status": "passed",
+      "exit_code": 0,
+      "elapsed_s": 340.6385555267334
+    },
+    {
+      "name": "export_verify",
+      "command": [
+        "bash",
+        "scripts/export_and_verify.sh",
+        "clean_20261101_mh02"
+      ],
+      "log": "results/clean_20261101/export_verify.log",
+      "started_at": "2026-11-01T12:47:22.151908+00:00",
+      "status": "passed",
+      "exit_code": 0,
+      "elapsed_s": 2.5018861293792725
+    }
+  ],
+  "current_stage": "export_verify",
+  "finished_at": "2026-11-01T12:47:24.657015+00:00",
+  "elapsed_s": 1537.8998425006866,
+  "verification": "results/clean_20261101_mh02/verification.json",
+  "map_keyframes": 1091,
+  "mh02_pose_pairs": 1510,
+  "accepted_old_map_connections": 461,
+  "pose_frame": "body/IMU",
+  "ground_truth_used_for_estimation": false
+}

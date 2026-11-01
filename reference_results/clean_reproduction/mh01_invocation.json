@@ -1,0 +1,9 @@
+{
+  "load": false, 
+  "run": "clean_20261101_mh01", 
+  "sequence": "MH_01_easy", 
+  "map_name": "clean_20261101_map", 
+  "rate": 0.5, 
+  "duration": null, 
+  "save": true
+}

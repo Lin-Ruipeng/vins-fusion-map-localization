@@ -1,0 +1,117 @@
+STAGE doctor log=results/clean_20261101/doctor.log
+COMPLETE doctor wall_s=0.3
+STAGE environment_download log=results/clean_20261101/environment_download.log
+COMPLETE environment_download wall_s=1.5
+STAGE build log=results/clean_20261101/build.log
+PROGRESS build wall_s=15.0 Cloning into 'src/VINS-Fusion'...
+PROGRESS build wall_s=30.0 [ 21%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/camera_models.dir/src/camera_models/PinholeFullCamera.cc.o
+PROGRESS build wall_s=45.0 [ 28%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/camera_models.dir/src/camera_models/EquidistantCamera.cc.o
+PROGRESS build wall_s=60.0                                                ^
+PROGRESS build wall_s=75.0 [ 62%] Building CXX object VINS-Fusion/loop_fusion/CMakeFiles/loop_fusion_node.dir/src/ThirdParty/DBoW/ScoringObject.cpp.o
+PROGRESS build wall_s=90.0 [ 80%] Building CXX object VINS-Fusion/vins_estimator/CMakeFiles/vins_lib.dir/src/utility/visualization.cpp.o
+PROGRESS build wall_s=105.0 [ 89%] Building CXX object VINS-Fusion/vins_estimator/CMakeFiles/vins_lib.dir/src/featureTracker/feature_tracker.cpp.o
+PROGRESS build wall_s=120.1 [ 95%] Building CXX object VINS-Fusion/vins_estimator/CMakeFiles/vins_node.dir/src/rosNodeTest.cpp.o
+COMPLETE build wall_s=129.3
+STAGE data log=results/clean_20261101/data.log
+PROGRESS data wall_s=15.0 machine_hall/MH_03_medium/MH_03_medium.zip 1105301873 compressed=1105171496 CRC32=fd0efa08
+PROGRESS data wall_s=30.0 DOWNLOAD machine_hall/MH_02_easy/MH_02_easy.zip 50331648/1292280179 bytes (3.9%)
+PROGRESS data wall_s=45.0 DOWNLOAD machine_hall/MH_02_easy/MH_02_easy.zip 117440512/1292280179 bytes (9.1%)
+PROGRESS data wall_s=60.0 DOWNLOAD machine_hall/MH_02_easy/MH_02_easy.zip 201326592/1292280179 bytes (15.6%)
+PROGRESS data wall_s=75.0 DOWNLOAD machine_hall/MH_02_easy/MH_02_easy.zip 285212672/1292280179 bytes (22.1%)
+PROGRESS data wall_s=90.0 DOWNLOAD machine_hall/MH_02_easy/MH_02_easy.zip 335544320/1292280179 bytes (26.0%)
+PROGRESS data wall_s=105.0 DOWNLOAD machine_hall/MH_02_easy/MH_02_easy.zip 419430400/1292280179 bytes (32.5%)
+PROGRESS data wall_s=120.1 DOWNLOAD machine_hall/MH_02_easy/MH_02_easy.zip 536870912/1292280179 bytes (41.5%)
+PROGRESS data wall_s=135.1 DOWNLOAD machine_hall/MH_02_easy/MH_02_easy.zip 620756992/1292280179 bytes (48.0%)
+PROGRESS data wall_s=150.1 DOWNLOAD machine_hall/MH_02_easy/MH_02_easy.zip 687865856/1292280179 bytes (53.2%)
+PROGRESS data wall_s=165.1 DOWNLOAD machine_hall/MH_02_easy/MH_02_easy.zip 738197504/1292280179 bytes (57.1%)
+PROGRESS data wall_s=180.1 DOWNLOAD machine_hall/MH_02_easy/MH_02_easy.zip 838860800/1292280179 bytes (64.9%)
+PROGRESS data wall_s=195.1 DOWNLOAD machine_hall/MH_02_easy/MH_02_easy.zip 922746880/1292280179 bytes (71.4%)
+PROGRESS data wall_s=210.1 DOWNLOAD machine_hall/MH_02_easy/MH_02_easy.zip 956301312/1292280179 bytes (74.0%)
+PROGRESS data wall_s=225.1 DOWNLOAD machine_hall/MH_02_easy/MH_02_easy.zip 1073741824/1292280179 bytes (83.1%)
+PROGRESS data wall_s=240.1 DOWNLOAD machine_hall/MH_02_easy/MH_02_easy.zip 1124073472/1292280179 bytes (87.0%)
+PROGRESS data wall_s=255.1 DOWNLOAD machine_hall/MH_02_easy/MH_02_easy.zip 1207959552/1292280179 bytes (93.5%)
+PROGRESS data wall_s=270.1 DOWNLOAD machine_hall/MH_02_easy/MH_02_easy.zip 1275502963/1292280179 bytes (98.7%)
+PROGRESS data wall_s=285.1 VERIFIED /home/folin/文档/Code/地图匹配/vins_fusion_lab/validation/clean_worktree/downloads/MH_02_easy.zip CRC32=05bd2c2f
+PROGRESS data wall_s=300.1 DOWNLOAD machine_hall/MH_01_easy/MH_01_easy.zip 0/1571131855 bytes (0.0%)
+PROGRESS data wall_s=315.1 DOWNLOAD machine_hall/MH_01_easy/MH_01_easy.zip 117440512/1571131855 bytes (7.5%)
+PROGRESS data wall_s=330.1 DOWNLOAD machine_hall/MH_01_easy/MH_01_easy.zip 201326592/1571131855 bytes (12.8%)
+PROGRESS data wall_s=345.1 DOWNLOAD machine_hall/MH_01_easy/MH_01_easy.zip 251658240/1571131855 bytes (16.0%)
+PROGRESS data wall_s=360.2 DOWNLOAD machine_hall/MH_01_easy/MH_01_easy.zip 352321536/1571131855 bytes (22.4%)
+PROGRESS data wall_s=375.2 DOWNLOAD machine_hall/MH_01_easy/MH_01_easy.zip 452984832/1571131855 bytes (28.8%)
+PROGRESS data wall_s=390.2 DOWNLOAD machine_hall/MH_01_easy/MH_01_easy.zip 486539264/1571131855 bytes (31.0%)
+PROGRESS data wall_s=405.2 DOWNLOAD machine_hall/MH_01_easy/MH_01_easy.zip 587202560/1571131855 bytes (37.4%)
+PROGRESS data wall_s=420.2 DOWNLOAD machine_hall/MH_01_easy/MH_01_easy.zip 687865856/1571131855 bytes (43.8%)
+PROGRESS data wall_s=435.2 DOWNLOAD machine_hall/MH_01_easy/MH_01_easy.zip 771751936/1571131855 bytes (49.1%)
+PROGRESS data wall_s=450.2 DOWNLOAD machine_hall/MH_01_easy/MH_01_easy.zip 822083584/1571131855 bytes (52.3%)
+PROGRESS data wall_s=465.2 DOWNLOAD machine_hall/MH_01_easy/MH_01_easy.zip 905969664/1571131855 bytes (57.7%)
+PROGRESS data wall_s=480.2 DOWNLOAD machine_hall/MH_01_easy/MH_01_easy.zip 989855744/1571131855 bytes (63.0%)
+PROGRESS data wall_s=495.2 DOWNLOAD machine_hall/MH_01_easy/MH_01_easy.zip 1056964608/1571131855 bytes (67.3%)
+PROGRESS data wall_s=510.2 DOWNLOAD machine_hall/MH_01_easy/MH_01_easy.zip 1140850688/1571131855 bytes (72.6%)
+PROGRESS data wall_s=525.2 DOWNLOAD machine_hall/MH_01_easy/MH_01_easy.zip 1224736768/1571131855 bytes (78.0%)
+PROGRESS data wall_s=540.2 DOWNLOAD machine_hall/MH_01_easy/MH_01_easy.zip 1291845632/1571131855 bytes (82.2%)
+PROGRESS data wall_s=555.2 DOWNLOAD machine_hall/MH_01_easy/MH_01_easy.zip 1358954496/1571131855 bytes (86.5%)
+PROGRESS data wall_s=570.2 DOWNLOAD machine_hall/MH_01_easy/MH_01_easy.zip 1426063360/1571131855 bytes (90.8%)
+PROGRESS data wall_s=585.2 DOWNLOAD machine_hall/MH_01_easy/MH_01_easy.zip 1493172224/1571131855 bytes (95.0%)
+PROGRESS data wall_s=600.3 DOWNLOAD machine_hall/MH_01_easy/MH_01_easy.zip 1537577423/1571131855 bytes (97.9%)
+PROGRESS data wall_s=615.3 VERIFIED /home/folin/文档/Code/地图匹配/vins_fusion_lab/validation/clean_worktree/downloads/MH_01_easy.zip CRC32=a1c54dd7
+PROGRESS data wall_s=630.3 CONVERT {'imu0': 25000, 'cam1': 2500, 'cam0': 2500} wall_s 12.2782509327
+PROGRESS data wall_s=645.3 }
+PROGRESS data wall_s=660.3 CONVERT {'imu0': 20834, 'cam1': 2083, 'cam0': 2083} wall_s 9.99619007111
+COMPLETE data wall_s=666.8
+STAGE mh01_build log=results/clean_20261101/mh01_build.log
+PROGRESS mh01_build wall_s=15.0 PROGRESS wall_s=10.0 counts={"/vins_estimator/odometry": 37, "/loop_fusion/odometry_rect": 37} last_stamp_ns={"/vins_estimator/odometry": 1403636584413555384, "/loop_fusion/odometry_rect": 1403636584413555384}
+PROGRESS mh01_build wall_s=30.0 PROGRESS wall_s=20.0 counts={"/vins_estimator/odometry": 87, "/loop_fusion/odometry_rect": 87} last_stamp_ns={"/vins_estimator/odometry": 1403636589413555384, "/loop_fusion/odometry_rect": 1403636589413555384}
+PROGRESS mh01_build wall_s=45.0 PROGRESS wall_s=40.0 counts={"/vins_estimator/odometry": 187, "/loop_fusion/odometry_rect": 187} last_stamp_ns={"/vins_estimator/odometry": 1403636599413555384, "/loop_fusion/odometry_rect": 1403636599413555384}
+PROGRESS mh01_build wall_s=60.0 PROGRESS wall_s=50.1 counts={"/vins_estimator/odometry": 238, "/loop_fusion/odometry_rect": 238} last_stamp_ns={"/vins_estimator/odometry": 1403636604513555527, "/loop_fusion/odometry_rect": 1403636604513555527}
+PROGRESS mh01_build wall_s=75.0 PROGRESS wall_s=70.1 counts={"/vins_estimator/odometry": 338, "/loop_fusion/odometry_rect": 338} last_stamp_ns={"/vins_estimator/odometry": 1403636614513555527, "/loop_fusion/odometry_rect": 1403636614513555527}
+PROGRESS mh01_build wall_s=90.0 PROGRESS wall_s=80.1 counts={"/vins_estimator/odometry": 388, "/loop_fusion/odometry_rect": 388} last_stamp_ns={"/vins_estimator/odometry": 1403636619513555527, "/loop_fusion/odometry_rect": 1403636619513555527}
+PROGRESS mh01_build wall_s=105.0 PROGRESS wall_s=100.1 counts={"/vins_estimator/odometry": 488, "/loop_fusion/odometry_rect": 488} last_stamp_ns={"/vins_estimator/odometry": 1403636629513555527, "/loop_fusion/odometry_rect": 1403636629513555527}
+PROGRESS mh01_build wall_s=120.0 PROGRESS wall_s=110.1 counts={"/vins_estimator/odometry": 538, "/loop_fusion/odometry_rect": 538} last_stamp_ns={"/vins_estimator/odometry": 1403636634513555527, "/loop_fusion/odometry_rect": 1403636634513555527}
+PROGRESS mh01_build wall_s=135.0 PROGRESS wall_s=130.1 counts={"/vins_estimator/odometry": 638, "/loop_fusion/odometry_rect": 638} last_stamp_ns={"/vins_estimator/odometry": 1403636644513555527, "/loop_fusion/odometry_rect": 1403636644513555527}
+PROGRESS mh01_build wall_s=150.1 PROGRESS wall_s=140.1 counts={"/vins_estimator/odometry": 688, "/loop_fusion/odometry_rect": 688} last_stamp_ns={"/vins_estimator/odometry": 1403636649513555527, "/loop_fusion/odometry_rect": 1403636649513555527}
+PROGRESS mh01_build wall_s=165.1 PROGRESS wall_s=160.2 counts={"/vins_estimator/odometry": 788, "/loop_fusion/odometry_rect": 788} last_stamp_ns={"/vins_estimator/odometry": 1403636659513555527, "/loop_fusion/odometry_rect": 1403636659513555527}
+PROGRESS mh01_build wall_s=180.1 PROGRESS wall_s=170.2 counts={"/vins_estimator/odometry": 838, "/loop_fusion/odometry_rect": 838} last_stamp_ns={"/vins_estimator/odometry": 1403636664513555527, "/loop_fusion/odometry_rect": 1403636664513555527}
+PROGRESS mh01_build wall_s=195.1 PROGRESS wall_s=190.2 counts={"/vins_estimator/odometry": 938, "/loop_fusion/odometry_rect": 938} last_stamp_ns={"/vins_estimator/odometry": 1403636674513555527, "/loop_fusion/odometry_rect": 1403636674513555527}
+PROGRESS mh01_build wall_s=210.1 PROGRESS wall_s=200.2 counts={"/vins_estimator/odometry": 988, "/loop_fusion/odometry_rect": 988} last_stamp_ns={"/vins_estimator/odometry": 1403636679513555527, "/loop_fusion/odometry_rect": 1403636679513555527}
+PROGRESS mh01_build wall_s=225.1 PROGRESS wall_s=220.2 counts={"/vins_estimator/odometry": 1088, "/loop_fusion/odometry_rect": 1088} last_stamp_ns={"/vins_estimator/odometry": 1403636689513555527, "/loop_fusion/odometry_rect": 1403636689513555527}
+PROGRESS mh01_build wall_s=240.1 PROGRESS wall_s=230.2 counts={"/vins_estimator/odometry": 1138, "/loop_fusion/odometry_rect": 1138} last_stamp_ns={"/vins_estimator/odometry": 1403636694513555527, "/loop_fusion/odometry_rect": 1403636694513555527}
+PROGRESS mh01_build wall_s=255.1 PROGRESS wall_s=250.3 counts={"/vins_estimator/odometry": 1239, "/loop_fusion/odometry_rect": 1239} last_stamp_ns={"/vins_estimator/odometry": 1403636704613555431, "/loop_fusion/odometry_rect": 1403636704613555431}
+PROGRESS mh01_build wall_s=270.1 PROGRESS wall_s=260.3 counts={"/vins_estimator/odometry": 1289, "/loop_fusion/odometry_rect": 1289} last_stamp_ns={"/vins_estimator/odometry": 1403636709613555431, "/loop_fusion/odometry_rect": 1403636709613555431}
+PROGRESS mh01_build wall_s=285.1 PROGRESS wall_s=280.3 counts={"/vins_estimator/odometry": 1389, "/loop_fusion/odometry_rect": 1389} last_stamp_ns={"/vins_estimator/odometry": 1403636719613555431, "/loop_fusion/odometry_rect": 1403636719613555431}
+PROGRESS mh01_build wall_s=300.1 PROGRESS wall_s=290.3 counts={"/vins_estimator/odometry": 1439, "/loop_fusion/odometry_rect": 1439} last_stamp_ns={"/vins_estimator/odometry": 1403636724613555431, "/loop_fusion/odometry_rect": 1403636724613555431}
+PROGRESS mh01_build wall_s=315.1 PROGRESS wall_s=310.3 counts={"/vins_estimator/odometry": 1539, "/loop_fusion/odometry_rect": 1539} last_stamp_ns={"/vins_estimator/odometry": 1403636734613555431, "/loop_fusion/odometry_rect": 1403636734613555431}
+PROGRESS mh01_build wall_s=330.1 PROGRESS wall_s=320.3 counts={"/vins_estimator/odometry": 1589, "/loop_fusion/odometry_rect": 1589} last_stamp_ns={"/vins_estimator/odometry": 1403636739613555431, "/loop_fusion/odometry_rect": 1403636739613555431}
+PROGRESS mh01_build wall_s=345.1 PROGRESS wall_s=340.4 counts={"/vins_estimator/odometry": 1689, "/loop_fusion/odometry_rect": 1689} last_stamp_ns={"/vins_estimator/odometry": 1403636749613555431, "/loop_fusion/odometry_rect": 1403636749613555431}
+PROGRESS mh01_build wall_s=360.1 PROGRESS wall_s=350.4 counts={"/vins_estimator/odometry": 1739, "/loop_fusion/odometry_rect": 1739} last_stamp_ns={"/vins_estimator/odometry": 1403636754613555431, "/loop_fusion/odometry_rect": 1403636754613555431}
+PROGRESS mh01_build wall_s=375.1 PROGRESS wall_s=360.4 counts={"/vins_estimator/odometry": 1789, "/loop_fusion/odometry_rect": 1789} last_stamp_ns={"/vins_estimator/odometry": 1403636759613555431, "/loop_fusion/odometry_rect": 1403636759613555431}
+PROGRESS mh01_build wall_s=390.1 PROGRESS wall_s=360.4 counts={"/vins_estimator/odometry": 1789, "/loop_fusion/odometry_rect": 1789} last_stamp_ns={"/vins_estimator/odometry": 1403636759613555431, "/loop_fusion/odometry_rect": 1403636759613555431}
+COMPLETE mh01_build wall_s=396.4
+STAGE map_validate log=results/clean_20261101/map_validate.log
+COMPLETE map_validate wall_s=0.5
+STAGE mh02_localization log=results/clean_20261101/mh02_localization.log
+PROGRESS mh02_localization wall_s=15.0 START loop 120 stdbuf -oL -eL /work/catkin_ws/devel/lib/loop_fusion/loop_fusion_node /work/results/clean_20261101_mh02/euroc_stereo_imu_config.yaml
+PROGRESS mh02_localization wall_s=30.0 PROGRESS wall_s=10.0 counts={"/vins_estimator/odometry": 36, "/loop_fusion/odometry_rect": 36} last_stamp_ns={"/vins_estimator/odometry": 1403636863201666594, "/loop_fusion/odometry_rect": 1403636863201666594}
+PROGRESS mh02_localization wall_s=45.0 PROGRESS wall_s=20.0 counts={"/vins_estimator/odometry": 86, "/loop_fusion/odometry_rect": 86} last_stamp_ns={"/vins_estimator/odometry": 1403636868201666594, "/loop_fusion/odometry_rect": 1403636868201666594}
+PROGRESS mh02_localization wall_s=60.0 PROGRESS wall_s=40.0 counts={"/vins_estimator/odometry": 187, "/loop_fusion/odometry_rect": 187} last_stamp_ns={"/vins_estimator/odometry": 1403636878301666498, "/loop_fusion/odometry_rect": 1403636878301666498}
+PROGRESS mh02_localization wall_s=75.0 PROGRESS wall_s=50.1 counts={"/vins_estimator/odometry": 237, "/loop_fusion/odometry_rect": 237} last_stamp_ns={"/vins_estimator/odometry": 1403636883301666498, "/loop_fusion/odometry_rect": 1403636883301666498}
+PROGRESS mh02_localization wall_s=90.0 PROGRESS wall_s=70.1 counts={"/vins_estimator/odometry": 337, "/loop_fusion/odometry_rect": 337} last_stamp_ns={"/vins_estimator/odometry": 1403636893301666498, "/loop_fusion/odometry_rect": 1403636893301666498}
+PROGRESS mh02_localization wall_s=105.0 PROGRESS wall_s=80.1 counts={"/vins_estimator/odometry": 387, "/loop_fusion/odometry_rect": 387} last_stamp_ns={"/vins_estimator/odometry": 1403636898301666498, "/loop_fusion/odometry_rect": 1403636898301666498}
+PROGRESS mh02_localization wall_s=120.0 PROGRESS wall_s=100.1 counts={"/vins_estimator/odometry": 487, "/loop_fusion/odometry_rect": 487} last_stamp_ns={"/vins_estimator/odometry": 1403636908301666498, "/loop_fusion/odometry_rect": 1403636908301666498}
+PROGRESS mh02_localization wall_s=135.1 PROGRESS wall_s=110.1 counts={"/vins_estimator/odometry": 537, "/loop_fusion/odometry_rect": 537} last_stamp_ns={"/vins_estimator/odometry": 1403636913301666498, "/loop_fusion/odometry_rect": 1403636913301666498}
+PROGRESS mh02_localization wall_s=150.1 PROGRESS wall_s=130.1 counts={"/vins_estimator/odometry": 637, "/loop_fusion/odometry_rect": 637} last_stamp_ns={"/vins_estimator/odometry": 1403636923301666498, "/loop_fusion/odometry_rect": 1403636923301666498}
+PROGRESS mh02_localization wall_s=165.1 PROGRESS wall_s=140.2 counts={"/vins_estimator/odometry": 687, "/loop_fusion/odometry_rect": 687} last_stamp_ns={"/vins_estimator/odometry": 1403636928301666498, "/loop_fusion/odometry_rect": 1403636928301666498}
+PROGRESS mh02_localization wall_s=180.1 PROGRESS wall_s=160.2 counts={"/vins_estimator/odometry": 787, "/loop_fusion/odometry_rect": 787} last_stamp_ns={"/vins_estimator/odometry": 1403636938301666498, "/loop_fusion/odometry_rect": 1403636938301666498}
+PROGRESS mh02_localization wall_s=195.1 PROGRESS wall_s=170.2 counts={"/vins_estimator/odometry": 837, "/loop_fusion/odometry_rect": 837} last_stamp_ns={"/vins_estimator/odometry": 1403636943301666498, "/loop_fusion/odometry_rect": 1403636943301666498}
+PROGRESS mh02_localization wall_s=210.1 PROGRESS wall_s=180.2 counts={"/vins_estimator/odometry": 887, "/loop_fusion/odometry_rect": 887} last_stamp_ns={"/vins_estimator/odometry": 1403636948301666498, "/loop_fusion/odometry_rect": 1403636948301666498}
+PROGRESS mh02_localization wall_s=225.1 PROGRESS wall_s=200.2 counts={"/vins_estimator/odometry": 987, "/loop_fusion/odometry_rect": 987} last_stamp_ns={"/vins_estimator/odometry": 1403636958301666498, "/loop_fusion/odometry_rect": 1403636958301666498}
+PROGRESS mh02_localization wall_s=240.1 PROGRESS wall_s=210.2 counts={"/vins_estimator/odometry": 1038, "/loop_fusion/odometry_rect": 1038} last_stamp_ns={"/vins_estimator/odometry": 1403636963401666641, "/loop_fusion/odometry_rect": 1403636963401666641}
+PROGRESS mh02_localization wall_s=255.1 PROGRESS wall_s=230.3 counts={"/vins_estimator/odometry": 1138, "/loop_fusion/odometry_rect": 1138} last_stamp_ns={"/vins_estimator/odometry": 1403636973401666641, "/loop_fusion/odometry_rect": 1403636973401666641}
+PROGRESS mh02_localization wall_s=270.1 PROGRESS wall_s=240.3 counts={"/vins_estimator/odometry": 1188, "/loop_fusion/odometry_rect": 1188} last_stamp_ns={"/vins_estimator/odometry": 1403636978401666641, "/loop_fusion/odometry_rect": 1403636978401666641}
+PROGRESS mh02_localization wall_s=285.1 PROGRESS wall_s=260.3 counts={"/vins_estimator/odometry": 1288, "/loop_fusion/odometry_rect": 1288} last_stamp_ns={"/vins_estimator/odometry": 1403636988401666641, "/loop_fusion/odometry_rect": 1403636988401666641}
+PROGRESS mh02_localization wall_s=300.1 PROGRESS wall_s=270.3 counts={"/vins_estimator/odometry": 1338, "/loop_fusion/odometry_rect": 1338} last_stamp_ns={"/vins_estimator/odometry": 1403636993401666641, "/loop_fusion/odometry_rect": 1403636993401666641}
+PROGRESS mh02_localization wall_s=315.1 PROGRESS wall_s=290.3 counts={"/vins_estimator/odometry": 1438, "/loop_fusion/odometry_rect": 1438} last_stamp_ns={"/vins_estimator/odometry": 1403637003401666641, "/loop_fusion/odometry_rect": 1403637003401666641}
+PROGRESS mh02_localization wall_s=330.1 PROGRESS wall_s=300.3 counts={"/vins_estimator/odometry": 1488, "/loop_fusion/odometry_rect": 1488} last_stamp_ns={"/vins_estimator/odometry": 1403637008401666641, "/loop_fusion/odometry_rect": 1403637008401666641}
+COMPLETE mh02_localization wall_s=340.6
+STAGE export_verify log=results/clean_20261101/export_verify.log
+COMPLETE export_verify wall_s=2.5
+FULL_REPRODUCTION_PASSED /home/folin/文档/Code/地图匹配/vins_fusion_lab/validation/clean_worktree/results/clean_20261101/summary.json

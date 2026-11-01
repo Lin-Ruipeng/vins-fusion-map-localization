@@ -1,0 +1,139 @@
+{
+  "pose_frame": "body/IMU; position and quaternion orientation", 
+  "acceptance_passed": true, 
+  "moving_saved_map_match_gap": {
+    "maximum_orientation_change_deg": 9.102861126944369, 
+    "wall_duration_s": 25.77851629257202, 
+    "left_event": {
+      "old": 408.0, 
+      "wall": 1793537091.283988, 
+      "current": 1591.0, 
+      "stamp": 1403636943.1016665, 
+      "relative_translation_m": 0.180027, 
+      "inliers": 33.0, 
+      "current_sequence": 1.0, 
+      "correspondences": 102.0, 
+      "old_sequence": 0.0, 
+      "event": "PNP_ACCEPT", 
+      "relative_yaw_deg": 14.839354
+    }, 
+    "maximum_raw_vio_position_change_m": 3.400063648967974, 
+    "right_event": {
+      "old": 468.0, 
+      "wall": 1793537117.0625043, 
+      "current": 1667.0, 
+      "stamp": 1403636956.0016665, 
+      "relative_translation_m": 0.774757, 
+      "inliers": 34.0, 
+      "current_sequence": 1.0, 
+      "correspondences": 110.0, 
+      "old_sequence": 0.0, 
+      "event": "PNP_ACCEPT", 
+      "relative_yaw_deg": 14.989418
+    }, 
+    "corrected_pose_messages_between_matches": 128, 
+    "maximum_map_position_change_m": 3.405682471067778
+  }, 
+  "longest_saved_map_match_gap": {
+    "left_event": {
+      "old": 161.0, 
+      "wall": 1793536973.8906596, 
+      "current": 1304.0, 
+      "stamp": 1403636884.4016666, 
+      "relative_translation_m": 0.079534, 
+      "inliers": 65.0, 
+      "current_sequence": 1.0, 
+      "correspondences": 122.0, 
+      "old_sequence": 0.0, 
+      "event": "PNP_ACCEPT", 
+      "relative_yaw_deg": 4.185907
+    }, 
+    "right_event": {
+      "old": 162.0, 
+      "wall": 1793537000.0950825, 
+      "current": 1306.0, 
+      "stamp": 1403636897.5016665, 
+      "relative_translation_m": 0.04695, 
+      "inliers": 60.0, 
+      "current_sequence": 1.0, 
+      "correspondences": 81.0, 
+      "old_sequence": 0.0, 
+      "event": "PNP_ACCEPT", 
+      "relative_yaw_deg": 7.197603
+    }, 
+    "corrected_pose_messages_between_matches": 131, 
+    "wall_duration_s": 26.20442295074463
+  }, 
+  "run_name": "clean_20261101_mh02", 
+  "accepted_connections_to_loaded_sequence": 461, 
+  "first_connection": {
+    "old": 2.0, 
+    "wall": 1793536926.8843355, 
+    "current": 1092.0, 
+    "stamp": 1403636860.9016666, 
+    "relative_translation_m": 0.076193, 
+    "inliers": 50.0, 
+    "current_sequence": 1.0, 
+    "correspondences": 88.0, 
+    "old_sequence": 0.0, 
+    "event": "PNP_ACCEPT", 
+    "relative_yaw_deg": 3.024805
+  }, 
+  "poses_after_first_alignment": 1495, 
+  "sequence": "MH_02_easy", 
+  "corrected_pose_count": 1510, 
+  "post_alignment_max_interval_s": 0.1, 
+  "ground_truth_used_for_estimation": false, 
+  "verification_created_wall_s": 1793537244.473687, 
+  "evaluation": {
+    "post_alignment_evaluation_samples": 1483, 
+    "mh02_poses_fitted_to_ground_truth": false, 
+    "reference": "One SE3, scale=1 fit of MH01 ground-truth body positions to saved MH01 optimized keyframes; same transform applied unchanged to MH02 ground truth. MH02 raw VIO uses only its first actual map alignment, frozen thereafter.", 
+    "mh02_first_alignment_frozen_vio_position_rmse_m": 0.26219779941340005, 
+    "gt_to_map_translation": [
+      4.784990554953705, 
+      0.8878877097390929, 
+      -0.8700961981704185
+    ], 
+    "mh02_post_alignment_corrected_position_rmse_m": 0.19341957701683343, 
+    "mh01_reference_fit_position_rmse_m": 0.16389672501650904, 
+    "gt_to_map_rotation": [
+      [
+        -0.8701961035068404, 
+        0.4926400349967141, 
+        -0.0080335147942244
+      ], 
+      [
+        -0.49269825335508755, 
+        -0.8701561987404447, 
+        0.008753338473135364
+      ], 
+      [
+        -0.0026781677241236035, 
+        0.011575219739415776, 
+        0.9999294183619292
+      ]
+    ]
+  }, 
+  "initialization_confirmed": true, 
+  "post_alignment_median_interval_s": 0.1, 
+  "first_alignment": {
+    "old": 2.0, 
+    "tx": 0.025362867, 
+    "ty": 0.177038351, 
+    "wall": 1793536926.8846498, 
+    "current": 1092.0, 
+    "stamp": 1403636860.9016666, 
+    "current_sequence": 1.0, 
+    "yaw_deg": 5.202264149, 
+    "old_sequence": 0.0, 
+    "event": "CROSS_SEQUENCE_ALIGN", 
+    "tz": -0.340992538
+  }, 
+  "local_pose_count": 1510, 
+  "finite_positions_and_unit_quaternions": true, 
+  "vio_and_map_message_timestamps_identical": true, 
+  "map_loaded_keyframes": 1091, 
+  "sensor_time_output_hz": 10.000000009476475, 
+  "map_name": "clean_20261101_map"
+}

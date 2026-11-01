@@ -32,6 +32,10 @@ bash scripts/reproduce.sh
 
 [平台与安装指引](docs/platforms.md) · [失败后处理](docs/troubleshooting.md)
 
+## 从空目录验证完整入口
+
+2026-11-01，实际从无源码缓存、数据、地图、编译产物的新 Git 克隆执行默认完整流程，全部阶段通过：**25.6 分钟、1,091 个新关键帧、MH02 1,510 对位姿、461 次旧图 PnP、位置 RMSE 0.193 m**。源码及数据重新从公开来源获取；候选环境镜像的匿名下载使用相同 SHA256 字节。详见[空目录复现记录](reference_results/clean_reproduction/README.md)、[总报告](reference_results/clean_reproduction/summary.json)和[新 MH02 验收](reference_results/clean_reproduction/mh02_verification.json)。Windows/WSL2 仍未实机验证。
+
 ## 已有实际证据
 
 2026-11-01 的历史完整运行记录在 [`reference_results/`](reference_results/)，不作为新运行成功的依据：

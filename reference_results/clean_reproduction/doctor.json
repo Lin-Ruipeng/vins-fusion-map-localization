@@ -1,0 +1,12 @@
+{
+  "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+  "architecture": "x86_64",
+  "python": "3.14.4",
+  "workspace": "/home/folin/\u6587\u6863/Code/\u5730\u56fe\u5339\u914d/vins_fusion_lab/validation/clean_worktree",
+  "free_disk_gib": 298.84,
+  "host_memory_gib": 22.26,
+  "docker_architecture": "x86_64",
+  "status": "passed",
+  "errors": [],
+  "warnings": []
+}

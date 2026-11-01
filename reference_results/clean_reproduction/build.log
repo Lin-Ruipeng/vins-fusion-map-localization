@@ -1,0 +1,219 @@
+Cloning into 'src/VINS-Fusion'...
+HEAD is now at be55a93 * fix a memory issue
+-- The C compiler identification is GNU 5.4.0
+-- The CXX compiler identification is GNU 5.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using CATKIN_DEVEL_PREFIX: /work/catkin_ws/devel
+-- Using CMAKE_PREFIX_PATH: /opt/ros/kinetic
+-- This workspace overlays: /opt/ros/kinetic
+-- Found PythonInterp: /usr/bin/python2 (found suitable version "2.7.12", minimum required is "2") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python2
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /work/catkin_ws/build/test_results
+-- Found gtest sources under '/usr/src/gmock': gtests will be built
+-- Found gmock sources under '/usr/src/gmock': gmock will be built
+-- Found PythonInterp: /usr/bin/python2 (found version "2.7.12") 
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Using Python nosetests: /usr/bin/nosetests-2.7
+-- catkin 0.7.29
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- Using CATKIN_WHITELIST_PACKAGES: camera_models;vins;loop_fusion
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 3 packages in topological order:
+-- ~~  - camera_models
+-- ~~  - loop_fusion
+-- ~~  - vins
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'camera_models'
+-- ==> add_subdirectory(VINS-Fusion/camera_models)
+-- Boost version: 1.58.0
+-- Found the following Boost libraries:
+--   filesystem
+--   program_options
+--   system
+-- Found OpenCV: /opt/ros/kinetic (found version "3.3.1") 
+-- Found installed version of Eigen: /usr/lib/cmake/eigen3
+-- Found required Ceres dependency: Eigen version 3.2.92 in /usr/include/eigen3
+-- Found required Ceres dependency: glog
+-- Performing Test GFLAGS_IN_GOOGLE_NAMESPACE
+-- Performing Test GFLAGS_IN_GOOGLE_NAMESPACE - Success
+-- Found required Ceres dependency: gflags
+-- Found Ceres version: 1.14.0 installed in: /usr/local with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, OpenMP, Multithreading]
+-- +++ processing catkin package: 'loop_fusion'
+-- ==> add_subdirectory(VINS-Fusion/loop_fusion)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Found installed version of Eigen: /usr/lib/cmake/eigen3
+-- Found required Ceres dependency: Eigen version 3.2.92 in /usr/include/eigen3
+-- Found required Ceres dependency: glog
+-- Found required Ceres dependency: gflags
+-- Found Ceres version: 1.14.0 installed in: /usr/local with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, OpenMP, Multithreading]
+-- +++ processing catkin package: 'vins'
+-- ==> add_subdirectory(VINS-Fusion/vins_estimator)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Found installed version of Eigen: /usr/lib/cmake/eigen3
+-- Found required Ceres dependency: Eigen version 3.2.92 in /usr/include/eigen3
+-- Found required Ceres dependency: glog
+-- Found required Ceres dependency: gflags
+-- Found Ceres version: 1.14.0 installed in: /usr/local with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, OpenMP, Multithreading]
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /work/catkin_ws/build
+Scanning dependencies of target camera_models
+Scanning dependencies of target Calibrations
+[  1%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/camera_models.dir/src/chessboard/Chessboard.cc.o
+[  3%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/Calibrations.dir/src/chessboard/Chessboard.cc.o
+[  4%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/Calibrations.dir/src/intrinsic_calib.cc.o
+[  6%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/Calibrations.dir/src/calib/CameraCalibration.cc.o
+[  7%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/Calibrations.dir/src/camera_models/Camera.cc.o
+[  9%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/camera_models.dir/src/calib/CameraCalibration.cc.o
+[ 10%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/Calibrations.dir/src/camera_models/CameraFactory.cc.o
+[ 12%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/Calibrations.dir/src/camera_models/CostFunctionFactory.cc.o
+[ 13%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/camera_models.dir/src/camera_models/Camera.cc.o
+[ 15%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/camera_models.dir/src/camera_models/CameraFactory.cc.o
+[ 16%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/Calibrations.dir/src/camera_models/PinholeCamera.cc.o
+[ 18%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/camera_models.dir/src/camera_models/CostFunctionFactory.cc.o
+[ 19%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/camera_models.dir/src/camera_models/PinholeCamera.cc.o
+[ 21%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/camera_models.dir/src/camera_models/PinholeFullCamera.cc.o
+[ 22%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/Calibrations.dir/src/camera_models/PinholeFullCamera.cc.o
+[ 24%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/Calibrations.dir/src/camera_models/CataCamera.cc.o
+[ 25%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/camera_models.dir/src/camera_models/CataCamera.cc.o
+[ 27%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/Calibrations.dir/src/camera_models/EquidistantCamera.cc.o
+[ 28%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/camera_models.dir/src/camera_models/EquidistantCamera.cc.o
+[ 30%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/Calibrations.dir/src/camera_models/ScaramuzzaCamera.cc.o
+[ 31%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/camera_models.dir/src/camera_models/ScaramuzzaCamera.cc.o
+[ 33%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/Calibrations.dir/src/sparse_graph/Transform.cc.o
+[ 34%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/Calibrations.dir/src/gpl/gpl.cc.o
+[ 36%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/Calibrations.dir/src/gpl/EigenQuaternionParameterization.cc.o
+[ 37%] Linking CXX executable /work/catkin_ws/devel/lib/camera_models/Calibrations
+[ 37%] Built target Calibrations
+[ 39%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/camera_models.dir/src/sparse_graph/Transform.cc.o
+[ 40%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/camera_models.dir/src/gpl/gpl.cc.o
+[ 42%] Building CXX object VINS-Fusion/camera_models/CMakeFiles/camera_models.dir/src/gpl/EigenQuaternionParameterization.cc.o
+[ 43%] Linking CXX shared library /work/catkin_ws/devel/lib/libcamera_models.so
+[ 43%] Built target camera_models
+Scanning dependencies of target loop_fusion_node
+[ 46%] Building CXX object VINS-Fusion/loop_fusion/CMakeFiles/loop_fusion_node.dir/src/pose_graph.cpp.o
+[ 46%] Building CXX object VINS-Fusion/loop_fusion/CMakeFiles/loop_fusion_node.dir/src/pose_graph_node.cpp.o
+Scanning dependencies of target vins_lib
+[ 48%] Building CXX object VINS-Fusion/vins_estimator/CMakeFiles/vins_lib.dir/src/estimator/parameters.cpp.o
+/work/catkin_ws/src/VINS-Fusion/loop_fusion/src/pose_graph.cpp: In member function ‘int PoseGraph::detectLoop(KeyFrame*, int)’:
+/work/catkin_ws/src/VINS-Fusion/loop_fusion/src/pose_graph.cpp:415:47: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if (min_index == -1 || (ret[i].Id < min_index && ret[i].Score > 0.015))
+                                               ^
+In file included from /work/catkin_ws/src/VINS-Fusion/loop_fusion/src/ThirdParty/DBoW/DBoW2.h:63:0,
+                 from /work/catkin_ws/src/VINS-Fusion/loop_fusion/src/keyframe.h:24,
+                 from /work/catkin_ws/src/VINS-Fusion/loop_fusion/src/pose_graph.h:28,
+                 from /work/catkin_ws/src/VINS-Fusion/loop_fusion/src/pose_graph.cpp:12:
+/work/catkin_ws/src/VINS-Fusion/loop_fusion/src/ThirdParty/DBoW/TemplatedVocabulary.h: In instantiation of ‘void DBoW2::TemplatedVocabulary<TDescriptor, F>::loadBin(const string&) [with TDescriptor = boost::dynamic_bitset<>; F = DBoW2::FBrief; std::__cxx11::string = std::__cxx11::basic_string<char>]’:
+/work/catkin_ws/src/VINS-Fusion/loop_fusion/src/ThirdParty/DBoW/TemplatedVocabulary.h:439:12:   required from ‘DBoW2::TemplatedVocabulary<TDescriptor, F>::TemplatedVocabulary(const string&) [with TDescriptor = boost::dynamic_bitset<>; F = DBoW2::FBrief; std::__cxx11::string = std::__cxx11::basic_string<char>]’
+/work/catkin_ws/src/VINS-Fusion/loop_fusion/src/pose_graph.cpp:65:39:   required from here
+/work/catkin_ws/src/VINS-Fusion/loop_fusion/src/ThirdParty/DBoW/TemplatedVocabulary.h:1529:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(unsigned int i = 0; i < voc.nNodes; ++i)
+                             ^
+/work/catkin_ws/src/VINS-Fusion/loop_fusion/src/ThirdParty/DBoW/TemplatedVocabulary.h:1553:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(unsigned int i = 0; i < voc.nWords; ++i)
+                             ^
+[ 50%] Building CXX object VINS-Fusion/vins_estimator/CMakeFiles/vins_lib.dir/src/estimator/estimator.cpp.o
+[ 51%] Building CXX object VINS-Fusion/loop_fusion/CMakeFiles/loop_fusion_node.dir/src/keyframe.cpp.o
+[ 53%] Building CXX object VINS-Fusion/vins_estimator/CMakeFiles/vins_lib.dir/src/estimator/feature_manager.cpp.o
+[ 54%] Building CXX object VINS-Fusion/loop_fusion/CMakeFiles/loop_fusion_node.dir/src/utility/CameraPoseVisualization.cpp.o
+[ 56%] Building CXX object VINS-Fusion/loop_fusion/CMakeFiles/loop_fusion_node.dir/src/ThirdParty/DBoW/BowVector.cpp.o
+[ 57%] Building CXX object VINS-Fusion/loop_fusion/CMakeFiles/loop_fusion_node.dir/src/ThirdParty/DBoW/FBrief.cpp.o
+[ 59%] Building CXX object VINS-Fusion/loop_fusion/CMakeFiles/loop_fusion_node.dir/src/ThirdParty/DBoW/FeatureVector.cpp.o
+[ 60%] Building CXX object VINS-Fusion/loop_fusion/CMakeFiles/loop_fusion_node.dir/src/ThirdParty/DBoW/QueryResults.cpp.o
+[ 62%] Building CXX object VINS-Fusion/loop_fusion/CMakeFiles/loop_fusion_node.dir/src/ThirdParty/DBoW/ScoringObject.cpp.o
+[ 63%] Building CXX object VINS-Fusion/loop_fusion/CMakeFiles/loop_fusion_node.dir/src/ThirdParty/DUtils/Random.cpp.o
+[ 65%] Building CXX object VINS-Fusion/loop_fusion/CMakeFiles/loop_fusion_node.dir/src/ThirdParty/DUtils/Timestamp.cpp.o
+[ 66%] Building CXX object VINS-Fusion/loop_fusion/CMakeFiles/loop_fusion_node.dir/src/ThirdParty/DVision/BRIEF.cpp.o
+[ 68%] Building CXX object VINS-Fusion/loop_fusion/CMakeFiles/loop_fusion_node.dir/src/ThirdParty/VocabularyBinary.cpp.o
+In file included from /work/catkin_ws/src/VINS-Fusion/loop_fusion/src/ThirdParty/VocabularyBinary.cpp:1:0:
+/work/catkin_ws/src/VINS-Fusion/loop_fusion/src/ThirdParty/VocabularyBinary.hpp: In constructor ‘VINSLoop::Vocabulary::Vocabulary()’:
+/work/catkin_ws/src/VINS-Fusion/loop_fusion/src/ThirdParty/VocabularyBinary.hpp:31:11: warning: ‘VINSLoop::Vocabulary::nodes’ will be initialized after [-Wreorder]
+     Node* nodes;
+           ^
+/work/catkin_ws/src/VINS-Fusion/loop_fusion/src/ThirdParty/VocabularyBinary.hpp:29:13: warning:   ‘int32_t VINSLoop::Vocabulary::nWords’ [-Wreorder]
+     int32_t nWords;
+             ^
+/work/catkin_ws/src/VINS-Fusion/loop_fusion/src/ThirdParty/VocabularyBinary.cpp:5:1: warning:   when initialized here [-Wreorder]
+ VINSLoop::Vocabulary::Vocabulary()
+ ^
+[ 69%] Linking CXX executable /work/catkin_ws/devel/lib/loop_fusion/loop_fusion_node
+[ 69%] Built target loop_fusion_node
+[ 71%] Building CXX object VINS-Fusion/vins_estimator/CMakeFiles/vins_lib.dir/src/factor/pose_local_parameterization.cpp.o
+[ 72%] Building CXX object VINS-Fusion/vins_estimator/CMakeFiles/vins_lib.dir/src/factor/projectionTwoFrameOneCamFactor.cpp.o
+[ 74%] Building CXX object VINS-Fusion/vins_estimator/CMakeFiles/vins_lib.dir/src/factor/projectionTwoFrameTwoCamFactor.cpp.o
+[ 75%] Building CXX object VINS-Fusion/vins_estimator/CMakeFiles/vins_lib.dir/src/factor/projectionOneFrameTwoCamFactor.cpp.o
+[ 77%] Building CXX object VINS-Fusion/vins_estimator/CMakeFiles/vins_lib.dir/src/factor/marginalization_factor.cpp.o
+[ 78%] Building CXX object VINS-Fusion/vins_estimator/CMakeFiles/vins_lib.dir/src/utility/utility.cpp.o
+[ 80%] Building CXX object VINS-Fusion/vins_estimator/CMakeFiles/vins_lib.dir/src/utility/visualization.cpp.o
+[ 81%] Building CXX object VINS-Fusion/vins_estimator/CMakeFiles/vins_lib.dir/src/utility/CameraPoseVisualization.cpp.o
+[ 83%] Building CXX object VINS-Fusion/vins_estimator/CMakeFiles/vins_lib.dir/src/initial/solve_5pts.cpp.o
+[ 84%] Building CXX object VINS-Fusion/vins_estimator/CMakeFiles/vins_lib.dir/src/initial/initial_aligment.cpp.o
+[ 86%] Building CXX object VINS-Fusion/vins_estimator/CMakeFiles/vins_lib.dir/src/initial/initial_sfm.cpp.o
+[ 87%] Building CXX object VINS-Fusion/vins_estimator/CMakeFiles/vins_lib.dir/src/initial/initial_ex_rotation.cpp.o
+[ 89%] Building CXX object VINS-Fusion/vins_estimator/CMakeFiles/vins_lib.dir/src/featureTracker/feature_tracker.cpp.o
+[ 90%] Linking CXX shared library /work/catkin_ws/devel/lib/libvins_lib.so
+[ 90%] Built target vins_lib
+Scanning dependencies of target kitti_gps_test
+Scanning dependencies of target vins_node
+Scanning dependencies of target kitti_odom_test
+[ 95%] Building CXX object VINS-Fusion/vins_estimator/CMakeFiles/kitti_gps_test.dir/src/KITTIGPSTest.cpp.o
+[ 95%] Building CXX object VINS-Fusion/vins_estimator/CMakeFiles/kitti_odom_test.dir/src/KITTIOdomTest.cpp.o
+[ 95%] Building CXX object VINS-Fusion/vins_estimator/CMakeFiles/vins_node.dir/src/rosNodeTest.cpp.o
+/work/catkin_ws/src/VINS-Fusion/vins_estimator/src/KITTIGPSTest.cpp: In function ‘int main(int, char**)’:
+/work/catkin_ws/src/VINS-Fusion/vins_estimator/src/KITTIGPSTest.cpp:144:86: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+    fscanf(GPSFile, "%lf %lf %lf %lf %lf %lf ", &lat, &lon, &alt, &roll, &pitch, &yaw);
+                                                                                      ^
+/work/catkin_ws/src/VINS-Fusion/vins_estimator/src/KITTIGPSTest.cpp:146:68: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+    fscanf(GPSFile, "%lf %lf %lf %lf %lf ", &vn, &ve, &vf, &vl, &vu);
+                                                                    ^
+/work/catkin_ws/src/VINS-Fusion/vins_estimator/src/KITTIGPSTest.cpp:148:77: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+    fscanf(GPSFile, "%lf %lf %lf %lf %lf %lf ", &ax, &ay, &az, &af, &al, &au);
+                                                                             ^
+/work/catkin_ws/src/VINS-Fusion/vins_estimator/src/KITTIGPSTest.cpp:150:77: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+    fscanf(GPSFile, "%lf %lf %lf %lf %lf %lf ", &wx, &wy, &wz, &wf, &wl, &wu);
+                                                                             ^
+/work/catkin_ws/src/VINS-Fusion/vins_estimator/src/KITTIGPSTest.cpp:152:117: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+    fscanf(GPSFile, "%lf %lf %lf %lf %lf %lf ", &pos_accuracy, &vel_accuracy, &navstat, &numsats, &velmode, &orimode);
+                                                                                                                     ^
+[ 96%] Linking CXX executable /work/catkin_ws/devel/lib/vins/kitti_gps_test
+[ 98%] Linking CXX executable /work/catkin_ws/devel/lib/vins/kitti_odom_test
+[ 98%] Built target kitti_gps_test
+[ 98%] Built target kitti_odom_test
+[100%] Linking CXX executable /work/catkin_ws/devel/lib/vins/vins_node
+[100%] Built target vins_node
+Base path: /work/catkin_ws
+Source space: /work/catkin_ws/src
+Build space: /work/catkin_ws/build
+Devel space: /work/catkin_ws/devel
+Install space: /work/catkin_ws/install
+Creating symlink "/work/catkin_ws/src/CMakeLists.txt" pointing to "/opt/ros/kinetic/share/catkin/cmake/toplevel.cmake"
+####
+#### Running command: "cmake /work/catkin_ws/src -DCMAKE_BUILD_TYPE=Release -DCATKIN_WHITELIST_PACKAGES=camera_models;vins;loop_fusion -DCATKIN_DEVEL_PREFIX=/work/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/work/catkin_ws/install -G Unix Makefiles" in "/work/catkin_ws/build"
+####
+####
+#### Running command: "make -j3 -l3" in "/work/catkin_ws/build"
+####

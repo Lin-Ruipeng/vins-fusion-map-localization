@@ -1,0 +1,9 @@
+{
+  "initial_checkout_commit": "bc2e44125f31b761f6b449259883cb056bdcbd38",
+  "initial_state": "No upstream source checkout, sensor data, maps, catkin build artifacts or live result directory.",
+  "artifact_transport": "Anonymous localhost HTTP serving exact candidate Release bytes. SHA256 equals artifacts/manifest.json. GitHub anonymous download is tested after publication.",
+  "source_and_data": "Upstream Git repository and both ASL ZIP members downloaded again from public network sources. New bags were converted and every sensor header timestamp checked against ASL CSV.",
+  "runtime_image_id": "sha256:89e5b91f1d01e3f8f0eeda25b38d366bdc7b314f353e4f7971d0c4556537e631",
+  "platform": "Ubuntu 26.04.1 x86_64; Windows/WSL2 not tested",
+  "reference_map_was_used": false
+}

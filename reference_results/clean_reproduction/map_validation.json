@@ -1,0 +1,8 @@
+{
+  "keyframes": 1091,
+  "keyframe_indices_min": 0,
+  "keyframe_indices_max": 1090,
+  "all_keypoint_descriptor_counts_match": true,
+  "all_images_present": true,
+  "pose_graph_sha256": "92628a981e076452a42a1c66422619a73a47264a4cf286c9f9beaf4e6ec9c06f"
+}

@@ -1,0 +1,15 @@
+{
+  "replayed_topics": [
+    "/cam0/image_raw", 
+    "/cam1/image_raw", 
+    "/imu0"
+  ], 
+  "ground_truth_replayed": false, 
+  "counts": {
+    "/cam1/image_raw": 3040, 
+    "/cam0/image_raw": 3040, 
+    "/imu0": 30400
+  }, 
+  "all_sensor_header_timestamps_match_asl_csv": true, 
+  "sequence": "MH_02_easy"
+}

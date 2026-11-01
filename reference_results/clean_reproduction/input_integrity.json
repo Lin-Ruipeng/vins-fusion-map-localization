@@ -1,0 +1,10 @@
+{
+  "MH_01_easy.zip": {
+    "sha256": "5f4ecbc563e7bf04950efab76fc3b14e126d4c91a1dd1134c33124fe18a4bfc6",
+    "matches_original_official_crc_verified_download": true
+  },
+  "MH_02_easy.zip": {
+    "sha256": "7439b07f0b34a499494c63f08b958c7948132468bce7d4952aeb082720aebd51",
+    "matches_original_official_crc_verified_download": true
+  }
+}
