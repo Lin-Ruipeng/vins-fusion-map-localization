@@ -1,0 +1,195 @@
+diff --git a/loop_fusion/src/keyframe.cpp b/loop_fusion/src/keyframe.cpp
+index 862b795..3209108 100644
+--- a/loop_fusion/src/keyframe.cpp
++++ b/loop_fusion/src/keyframe.cpp
+@@ -414,6 +414,7 @@ bool KeyFrame::findConnection(KeyFrame* old_kf)
+ 	Eigen::Vector3d relative_t;
+ 	Quaterniond relative_q;
+ 	double relative_yaw;
++	const int pnp_correspondences = matched_2d_cur.size();
+ 	if ((int)matched_2d_cur.size() > MIN_LOOP_NUM)
+ 	{
+ 		status.clear();
+@@ -490,6 +491,10 @@ bool KeyFrame::findConnection(KeyFrame* old_kf)
+ 	    //cout << "pnp relative_yaw " << relative_yaw << endl;
+ 	    if (abs(relative_yaw) < 30.0 && relative_t.norm() < 20.0)
+ 	    {
++	        ROS_INFO("[MAPLAB] PNP_ACCEPT wall=%.9f stamp=%.9f current=%d current_sequence=%d old=%d old_sequence=%d correspondences=%d inliers=%d relative_yaw_deg=%.6f relative_translation_m=%.6f",
++	                 ros::WallTime::now().toSec(), time_stamp, index, sequence,
++	                 old_kf->index, old_kf->sequence, pnp_correspondences,
++	                 (int)matched_2d_cur.size(), relative_yaw, relative_t.norm());
+ 
+ 	    	has_loop = true;
+ 	    	loop_index = old_kf->index;
+diff --git a/loop_fusion/src/pose_graph.cpp b/loop_fusion/src/pose_graph.cpp
+index b5436fd..897dc04 100644
+--- a/loop_fusion/src/pose_graph.cpp
++++ b/loop_fusion/src/pose_graph.cpp
+@@ -31,7 +31,8 @@ PoseGraph::PoseGraph()
+ 
+ PoseGraph::~PoseGraph()
+ {
+-    t_optimization.detach();
++    if (t_optimization.joinable())
++        t_optimization.join();
+ }
+ 
+ void PoseGraph::registerPub(ros::NodeHandle &n)
+@@ -152,6 +153,11 @@ void PoseGraph::addKeyFrame(KeyFrame* cur_kf, bool flag_detect_loop)
+                     }
+                 }
+                 sequence_loop[cur_kf->sequence] = 1;
++                ROS_INFO("[MAPLAB] CROSS_SEQUENCE_ALIGN wall=%.9f stamp=%.9f current=%d current_sequence=%d old=%d old_sequence=%d yaw_deg=%.9f tx=%.9f ty=%.9f tz=%.9f",
++                         ros::WallTime::now().toSec(), cur_kf->time_stamp,
++                         cur_kf->index, cur_kf->sequence, old_kf->index,
++                         old_kf->sequence, Utility::R2ypr(w_r_vio).x(),
++                         w_t_vio.x(), w_t_vio.y(), w_t_vio.z());
+             }
+             m_optimize_buf.lock();
+             optimize_buf.push(cur_kf->index);
+@@ -433,7 +439,7 @@ void PoseGraph::addKeyFrameIntoVoc(KeyFrame* keyframe)
+ 
+ void PoseGraph::optimize4DoF()
+ {
+-    while(true)
++    while(ros::ok())
+     {
+         int cur_index = -1;
+         int first_looped_index = -1;
+@@ -613,7 +619,7 @@ void PoseGraph::optimize4DoF()
+ 
+ void PoseGraph::optimize6DoF()
+ {
+-    while(true)
++    while(ros::ok())
+     {
+         int cur_index = -1;
+         int first_looped_index = -1;
+@@ -948,6 +954,7 @@ void PoseGraph::savePoseGraph()
+     fclose(pFile);
+ 
+     printf("save pose graph time: %f s\n", tmp_t.toc() / 1000);
++    ROS_INFO("[MAPLAB] MAP_SAVED path=%s keyframes=%zu", file_path.c_str(), keyframelist.size());
+     m_keyframelist.unlock();
+ }
+ void PoseGraph::loadPoseGraph()
+@@ -1068,6 +1075,7 @@ void PoseGraph::loadPoseGraph()
+     fclose (pFile);
+     printf("load pose graph time: %f s\n", tmp_t.toc()/1000);
+     base_sequence = 0;
++    ROS_INFO("[MAPLAB] MAP_LOADED path=%s keyframes=%d base_sequence=%d", file_path.c_str(), cnt, base_sequence);
+ }
+ 
+ void PoseGraph::publish()
+diff --git a/loop_fusion/src/pose_graph_node.cpp b/loop_fusion/src/pose_graph_node.cpp
+index bc583e2..037ef73 100644
+--- a/loop_fusion/src/pose_graph_node.cpp
++++ b/loop_fusion/src/pose_graph_node.cpp
+@@ -24,6 +24,8 @@
+ #include <mutex>
+ #include <queue>
+ #include <thread>
++#include <poll.h>
++#include <unistd.h>
+ #include <eigen3/Eigen/Dense>
+ #include <opencv2/opencv.hpp>
+ #include <opencv2/core/eigen.hpp>
+@@ -244,7 +246,7 @@ void extrinsic_callback(const nav_msgs::Odometry::ConstPtr &pose_msg)
+ 
+ void process()
+ {
+-    while (true)
++    while (ros::ok())
+     {
+         sensor_msgs::ImageConstPtr image_msg = NULL;
+         sensor_msgs::PointCloudConstPtr point_msg = NULL;
+@@ -377,9 +379,17 @@ void process()
+ 
+ void command()
+ {
+-    while(1)
++    while(ros::ok())
+     {
+-        char c = getchar();
++        // Poll so SIGINT can also stop this thread when no keyboard input arrives.
++        struct pollfd keyboard = {STDIN_FILENO, POLLIN, 0};
++        if (poll(&keyboard, 1, 100) <= 0)
++            continue;
++        if (keyboard.revents & (POLLHUP | POLLERR))
++            return;
++        char c;
++        if (!(keyboard.revents & POLLIN) || read(STDIN_FILENO, &c, 1) != 1)
++            continue;
+         if (c == 's')
+         {
+             m_process.lock();
+@@ -498,6 +508,8 @@ int main(int argc, char **argv)
+     keyboard_command_process = std::thread(command);
+     
+     ros::spin();
++    measurement_process.join();
++    keyboard_command_process.join();
+ 
+     return 0;
+ }
+diff --git a/vins_estimator/src/estimator/estimator.cpp b/vins_estimator/src/estimator/estimator.cpp
+index 05bf448..be8cb69 100644
+--- a/vins_estimator/src/estimator/estimator.cpp
++++ b/vins_estimator/src/estimator/estimator.cpp
+@@ -19,7 +19,7 @@ Estimator::Estimator(): f_manager{Rs}
+ 
+ Estimator::~Estimator()
+ {
+-    if (MULTIPLE_THREAD)
++    if (processThread.joinable())
+     {
+         processThread.join();
+         printf("join thread \n");
+@@ -269,7 +269,7 @@ bool Estimator::IMUAvailable(double t)
+ 
+ void Estimator::processMeasurements()
+ {
+-    while (1)
++    while (ros::ok())
+     {
+         //printf("process measurments\n");
+         pair<double, map<int, vector<pair<int, Eigen::Matrix<double, 7, 1> > > > > feature;
+@@ -278,7 +278,7 @@ void Estimator::processMeasurements()
+         {
+             feature = featureBuf.front();
+             curTime = feature.first + td;
+-            while(1)
++            while(ros::ok())
+             {
+                 if ((!USE_IMU  || IMUAvailable(feature.first + td)))
+                     break;
+@@ -291,6 +291,8 @@ void Estimator::processMeasurements()
+                     std::this_thread::sleep_for(dura);
+                 }
+             }
++            if (!ros::ok())
++                return;
+             mBuf.lock();
+             if(USE_IMU)
+                 getIMUInterval(prevTime, curTime, accVector, gyrVector);
+diff --git a/vins_estimator/src/rosNodeTest.cpp b/vins_estimator/src/rosNodeTest.cpp
+index 30598d1..3f05e02 100644
+--- a/vins_estimator/src/rosNodeTest.cpp
++++ b/vins_estimator/src/rosNodeTest.cpp
+@@ -70,7 +70,7 @@ cv::Mat getImageFromMsg(const sensor_msgs::ImageConstPtr &img_msg)
+ // extract images with same timestamp from two topics
+ void sync_process()
+ {
+-    while(1)
++    while(ros::ok())
+     {
+         if(STEREO)
+         {
+@@ -267,6 +267,7 @@ int main(int argc, char **argv)
+ 
+     std::thread sync_thread{sync_process};
+     ros::spin();
++    sync_thread.join();
+ 
+     return 0;
+ }
