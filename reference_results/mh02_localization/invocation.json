@@ -1,0 +1,8 @@
+{
+  "load": true, 
+  "run": "mh02_localization", 
+  "sequence": "MH_02_easy", 
+  "rate": 0.5, 
+  "duration": null, 
+  "save": false
+}

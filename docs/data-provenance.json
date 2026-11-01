@@ -1,0 +1,39 @@
+{
+  "official_landing_page": "https://projects.asl.ethz.ch/datasets/euroc-mav/",
+  "doi": "https://doi.org/10.3929/ethz-b-000690084",
+  "official_archive": {
+    "url": "https://www.research-collection.ethz.ch/server/api/core/bitstreams/7b2419c1-62b5-4714-b7f8-485e5fe3e5fe/content",
+    "size": 12683729426,
+    "md5_from_official_metadata": "363f5c2502b469cdd97ef85997714806",
+    "full_outer_archive_downloaded": false
+  },
+  "download_method": "Official ZIP central directory and bounded HTTP ranges; initial data parts from ETH; remaining selected member bytes from public byte-identical Hugging Face mirror. Each whole selected member checked against official CRC32; extracted files also checked by zipfile CRC.",
+  "fallback_mirror": "https://huggingface.co/datasets/GlowBond/EuRoC_MAV_Dataset/resolve/main/machine_hall.zip?download=true",
+  "selected_members": [
+    {
+      "filename": "machine_hall/MH_02_easy/MH_02_easy.zip",
+      "file_size": 1292413952,
+      "compress_size": 1292280179,
+      "compress_type": 8,
+      "CRC": 96283695,
+      "header_offset": 5241192924
+    },
+    {
+      "filename": "machine_hall/MH_01_easy/MH_01_easy.zip",
+      "file_size": 1571292346,
+      "compress_size": 1571131855,
+      "compress_type": 8,
+      "CRC": 2714062295,
+      "header_offset": 8572437937
+    }
+  ],
+  "mh01_bag": {
+    "original_local_source": "previously downloaded local MH01 cache; verified against official archive",
+    "original_download_mirror": "https://huggingface.co/datasets/kavehsgh/EuRoC_MAV_Dataset_Machine_Hall_Easy_01/resolve/main/MH_01_easy.bag?download=true",
+    "verified_against_official_archive_crc32": "a4de9033",
+    "sha256": "57f440ccd68ec8dc8f9461269f5909656b86198bac3adfd677b1fcc7a1428fa9"
+  },
+  "mh02_bag": "Converted from verified ASL images/CSV with exact integer timestamp_ns. Contains only /cam0/image_raw, /cam1/image_raw, /imu0. No ground truth input.",
+  "used_camera_model": "Official VINS-Fusion EuRoC stereo-IMU config uses repository cam0_mei.yaml and cam1_mei.yaml unchanged; archive pinhole calibration and camera-IMU extrinsics preserved separately.",
+  "ground_truth": "Extracted official state_groundtruth_estimate0/data.csv; evaluation only after the run."
+}

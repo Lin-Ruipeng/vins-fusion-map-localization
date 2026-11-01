@@ -1,0 +1,43 @@
+{
+  "repository": "Lin-Ruipeng/vins-fusion-map-localization",
+  "tag": "v0.1.0-euroc",
+  "base_url": "https://github.com/Lin-Ruipeng/vins-fusion-map-localization/releases/download/v0.1.0-euroc",
+  "image_id": "sha256:89e5b91f1d01e3f8f0eeda25b38d366bdc7b314f353e4f7971d0c4556537e631",
+  "assets": [
+    {
+      "name": "mh01-map.tar.gz",
+      "kind": "map",
+      "destination": "maps/mh01",
+      "size_bytes": 379073548,
+      "sha256": "70bc8f4d0e2760ac86dddebbf95d6659539606ded7f9cd639a296c38b967009f"
+    },
+    {
+      "name": "vins-fusion-lab-kinetic-ceres1.14.tar.gz",
+      "kind": "image",
+      "destination": "environment/vins-fusion-lab-kinetic-ceres1.14.tar.gz",
+      "size_bytes": 1034676196,
+      "sha256": "a9b09423854831e44248f0eafe2f5244f360d9bbc4a4e1b06b67e8ad2771cd2c"
+    },
+    {
+      "name": "mh01-build-outputs.bag",
+      "kind": "bags",
+      "destination": "reference_results/mh01_build/outputs.bag",
+      "size_bytes": 197626728,
+      "sha256": "1707d963ae4b7398e33f52418830f92b924af0e93c960a6733c28ef3571993f4"
+    },
+    {
+      "name": "mh01-replay-check-outputs.bag",
+      "kind": "bags",
+      "destination": "reference_results/mh01_replay_check/outputs.bag",
+      "size_bytes": 117172837,
+      "sha256": "e2b534e11db7e08c3ab4a0b3cf21f35bee2feb4d91d575f608e59b58ceb95f21"
+    },
+    {
+      "name": "mh02-localization-outputs.bag",
+      "kind": "bags",
+      "destination": "reference_results/mh02_localization/outputs.bag",
+      "size_bytes": 516170352,
+      "sha256": "4fdc112e86e31150f88835a2b2759a91c9843c1238d33bf8332d2461ad5c8428"
+    }
+  ]
+}

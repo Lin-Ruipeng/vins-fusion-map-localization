@@ -1,0 +1,8 @@
+{
+  "load": true, 
+  "run": "mh01_replay_check", 
+  "sequence": "MH_01_easy", 
+  "rate": 1.0, 
+  "duration": 30.0, 
+  "save": false
+}

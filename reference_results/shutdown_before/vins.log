@@ -1,0 +1,25 @@
+[0m[ INFO] [1793532634.136842494]: init begins[0m
+config_file: /work/results/shutdown_before/config.yaml
+USE_IMU: 1
+IMU_TOPIC: /imu0
+result path /work/results/shutdown_before//vio.csv
+[33m[ WARN] [1793532634.140314139]:  fix extrinsic param [0m
+camera number 2
+[0m[ INFO] [1793532634.140430027]: Synchronized sensors, fix time offset: 0[0m
+[0m[ INFO] [1793532634.140436479]: ROW: 480 COL: 752 [0m
+ exitrinsic cam 0
+ 0.0148655  -0.999881  0.0041403
+  0.999557  0.0149672  0.0257155
+-0.0257744 0.00375619   0.999661
+-0.0216401  -0.064677 0.00981073
+ exitrinsic cam 1
+ 0.0125553  -0.999755  0.0182238
+  0.999599  0.0130119  0.0251588
+-0.0253898  0.0179006   0.999517
+-0.0198436  0.0453689 0.00786212
+set g       0       0 9.81007
+terminate called without an active exception
+[0m[ INFO] [1793532634.140535706]: reading paramerter of camera /work/results/shutdown_before/cam0_mei.yaml[0m
+[0m[ INFO] [1793532634.140752424]: reading paramerter of camera /work/results/shutdown_before/cam1_mei.yaml[0m
+MULTIPLE_THREAD is 1
+[33m[ WARN] [1793532634.140854246]: waiting for image and imu...[0m

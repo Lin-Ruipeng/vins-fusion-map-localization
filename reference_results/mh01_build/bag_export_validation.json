@@ -1,0 +1,15 @@
+{
+  "vio_odometry.csv": {
+    "rows": 1831, 
+    "max_live_bag_component_error": 0.0
+  }, 
+  "counts_from_bag": {
+    "/vins_estimator/odometry": 1831, 
+    "/loop_fusion/odometry_rect": 1831
+  }, 
+  "map_odometry.csv": {
+    "rows": 1831, 
+    "max_live_bag_component_error": 0.0
+  }, 
+  "first_alignment_match_image_exported": false
+}

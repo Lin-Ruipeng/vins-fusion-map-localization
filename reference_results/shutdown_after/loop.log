@@ -1,0 +1,14 @@
+config_file: /work/results/shutdown_after/config.yaml
+vocabulary_file/work/catkin_ws/src/VINS-Fusion/loop_fusion/../support_files/brief_k10L6.bin
+loop start load vocabulary
+BRIEF_PATTERN_FILE/work/catkin_ws/src/VINS-Fusion/loop_fusion/../support_files/brief_pattern.yml
+cam calib path: /work/results/shutdown_after/cam0_mei.yaml
+VIO input, perfrom 4 DoF (x, y, z, yaw) pose graph optimization
+no previous pose graph
+pose graph path: /work/results/shutdown_after/map/
+pose graph saving... 
+save pose graph time: 0.000077 s
+[0m[ INFO] [1793532795.765031825]: [MAPLAB] MAP_SAVED path=/work/results/shutdown_after/map/pose_graph.txt keyframes=0[0m
+save pose graph finish
+you can set 'load_previous_pose_graph' to 1 in the config file to reuse it next time
+program shutting down...

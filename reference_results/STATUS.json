@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "date": "2026-11-01",
+  "source_revision": "be55a937a57436548ddfb1bd324bc1e9a9e828e0",
+  "main_report": "results/mh02_localization/verification.json",
+  "readme": "README.md",
+  "map_keyframes": 1091,
+  "mh01_build_pose_pairs": 1831,
+  "mh01_same_sequence_check_pose_pairs": 281,
+  "mh02_cross_sequence_pose_pairs": 1510,
+  "mh02_accepted_loaded_map_pnp_connections": 461,
+  "all_final_runtime_exit_codes_zero": true,
+  "container_processes_left_running": false
+}

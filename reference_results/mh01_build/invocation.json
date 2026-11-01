@@ -1,0 +1,8 @@
+{
+  "load": false, 
+  "run": "mh01_build", 
+  "sequence": "MH_01_easy", 
+  "rate": 0.5, 
+  "duration": null, 
+  "save": true
+}

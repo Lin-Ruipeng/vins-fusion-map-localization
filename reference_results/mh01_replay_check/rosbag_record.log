@@ -1,0 +1,12 @@
+[0m[ INFO] [1793532897.236811552]: Subscribing to /clock[0m
+[0m[ INFO] [1793532897.237851159]: Subscribing to /loop_fusion/base_path[0m
+[0m[ INFO] [1793532897.239344640]: Subscribing to /loop_fusion/match_image[0m
+[0m[ INFO] [1793532897.240735067]: Subscribing to /loop_fusion/odometry_rect[0m
+[0m[ INFO] [1793532897.241926921]: Subscribing to /loop_fusion/pose_graph_path[0m
+[0m[ INFO] [1793532897.243275640]: Subscribing to /rosout[0m
+[0m[ INFO] [1793532897.244659785]: Subscribing to /rosout_agg[0m
+[0m[ INFO] [1793532897.246048058]: Subscribing to /vins_estimator/extrinsic[0m
+[0m[ INFO] [1793532897.247476196]: Subscribing to /vins_estimator/keyframe_pose[0m
+[0m[ INFO] [1793532897.248921307]: Subscribing to /vins_estimator/odometry[0m
+[33m[ WARN] [1793532899.253096625]: /use_sim_time set to true and no clock published.  Still waiting for valid time...[0m
+[0m[ INFO] [1793532916.245936368, 1403636579.809262870]: Recording to /work/results/mh01_replay_check/outputs.bag.[0m
