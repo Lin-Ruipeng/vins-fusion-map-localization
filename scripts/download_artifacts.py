@@ -68,6 +68,9 @@ def install(source, asset, root=ROOT):
         return
     if target.exists():
         # This is a reference-map restore, never an overwrite of a new map.
+        graph = target / 'pose_graph.txt'
+        if not graph.is_file() or sha256(graph) != asset['pose_graph_sha256']:
+            raise RuntimeError('Existing map belongs to another run; preserved at ' + str(target))
         check = target / 'SHA256SUMS'
         if not check.is_file():
             raise RuntimeError('Existing map has no checksum inventory: ' + str(target))

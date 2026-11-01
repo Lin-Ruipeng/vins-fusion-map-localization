@@ -125,6 +125,17 @@ class ReproductionTests(unittest.TestCase):
             with self.assertRaisesRegex(RuntimeError, 'this new MH02 run'):
                 reproduce.current_report(root, 'new_mh02', 'new_map', time.time())
 
+    def test_existing_map_from_another_run_is_preserved(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            target = root/'maps/mh01'
+            target.mkdir(parents=True)
+            (target/'pose_graph.txt').write_text('my new map')
+            metadata = {'kind': 'map', 'destination': 'maps/mh01', 'pose_graph_sha256': '0'*64}
+            with self.assertRaisesRegex(RuntimeError, 'another run'):
+                assets.install(root/'unused.tar.gz', metadata, root)
+            self.assertEqual((target/'pose_graph.txt').read_text(), 'my new map')
+
     def test_duplicate_run_is_rejected_without_overwrite(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

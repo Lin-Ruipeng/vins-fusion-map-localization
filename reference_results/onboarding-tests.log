@@ -1,7 +1,7 @@
 test_corrupt_asset_is_not_installed (test_reproduction.ReproductionTests.test_corrupt_asset_is_not_installed) ... DOWNLOAD fixture.bin (public URL, no authentication)
   % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
                                  Dload  Upload  Total   Spent   Left   Speed
-  0      0   0      0   0      0      0      0                              0100 101.5k 100 101.5k   0      0 80.17M      0                              0100 101.5k 100 101.5k   0      0 72.76M      0                              0100 101.5k 100 101.5k   0      0 67.28M      0                              0
+  0      0   0      0   0      0      0      0                              0100 101.5k 100 101.5k   0      0 86.62M      0                              0100 101.5k 100 101.5k   0      0 78.28M      0                              0100 101.5k 100 101.5k   0      0 72.02M      0                              0
 ok
 test_docker_permission_error_is_preserved (test_reproduction.ReproductionTests.test_docker_permission_error_is_preserved) ... ok
 test_duplicate_run_is_rejected_without_overwrite (test_reproduction.ReproductionTests.test_duplicate_run_is_rejected_without_overwrite) ... usage: python3 -m unittest [-h] [--run-id RUN_ID] [--rate RATE]
@@ -12,6 +12,7 @@ test_euroc_range_falls_back_after_429 (test_reproduction.ReproductionTests.test_
 /usr/lib/python3.14/tempfile.py:484: ResourceWarning: Implicitly cleaning up <HTTPError 429: 'Too Many Requests'>
   _warnings.warn(self.warn_message, ResourceWarning)
 ok
+test_existing_map_from_another_run_is_preserved (test_reproduction.ReproductionTests.test_existing_map_from_another_run_is_preserved) ... ok
 test_interrupted_public_download_resumes_and_verifies (test_reproduction.ReproductionTests.test_interrupted_public_download_resumes_and_verifies) ... DOWNLOAD fixture.bin (public URL, no authentication)
   % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
                                  Dload  Upload  Total   Spent   Left   Speed
@@ -21,13 +22,13 @@ DOWNLOAD fixture.bin (public URL, no authentication)
 ** Resuming transfer from byte position 8192
   % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
                                  Dload  Upload  Total   Spent   Left   Speed
-  0      0   0      0   0      0      0      0                              0100  95808 100  95808   0      0 85.95M      0                              0100  95808 100  95808   0      0 77.69M      0                              0100  95808 100  95808   0      0 71.21M      0                              0
-VERIFIED_DOWNLOAD /tmp/tmptxhv9_zt/artifacts/cache/fixture.bin
+  0      0   0      0   0      0      0      0                              0100  95808 100  95808   0      0 96.48M      0                              0100  95808 100  95808   0      0 86.27M      0                              0100  95808 100  95808   0      0 78.29M      0                              0
+VERIFIED_DOWNLOAD /tmp/tmpos_gq0e_/artifacts/cache/fixture.bin
 ok
 test_missing_docker_is_actionable (test_reproduction.ReproductionTests.test_missing_docker_is_actionable) ... ok
 test_old_report_cannot_pass_new_reproduction (test_reproduction.ReproductionTests.test_old_report_cannot_pass_new_reproduction) ... ok
 
 ----------------------------------------------------------------------
-Ran 7 tests in 1.534s
+Ran 8 tests in 1.534s
 
 OK

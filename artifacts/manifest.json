@@ -9,7 +9,8 @@
       "kind": "map",
       "destination": "maps/mh01",
       "size_bytes": 379073548,
-      "sha256": "70bc8f4d0e2760ac86dddebbf95d6659539606ded7f9cd639a296c38b967009f"
+      "sha256": "70bc8f4d0e2760ac86dddebbf95d6659539606ded7f9cd639a296c38b967009f",
+      "pose_graph_sha256": "3487960125cc554108a094d82792b91896bb28575dea3192e43de126c860c7ce"
     },
     {
       "name": "vins-fusion-lab-kinetic-ceres1.14.tar.gz",

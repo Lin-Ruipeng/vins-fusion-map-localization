@@ -1,0 +1,50 @@
+TERMS FOR SUBMITTING AND USING A WORK
+
+1.	Rights to the work
+
+1.1.	The copyright or rights holder declares that he/she has the right to provide the work for use in ETH Zurich's repository.
+
+1.2.	He/she also declares that no third-party rights are infringed by the use granted under section 2.
+
+1.3.	Any intellectual property of third parties integrated in the work within the scope of a legally permissible licence (e.g. citation) has been indicated accordingly. If the work contains material to which the rights are held by third parties, permission to re-use it has been obtained from all rights holders and the components within the work have been marked. In cases of co-authorship on the work, the consent of the co-author(s) for the uses stipulated under section 2 has been obtained.
+
+1.4.	In certain cases, ETH Zurich reserves comprehensive exploitations rights to re-use intellectual property, e.g. inventions, software etc. In case of doubt, whether a publication in ETH Zurich's repository would conflict with a scheduled re-use by ETH Zurich (e.g. patenting) is to be clarified with ETH Transfer.
+
+1.5.	Works that have already been published under an open-content licence are re-used in accordance with the licence.
+
+1.6.	People who submit works on behalf of third parties must provide ETH Library with written proof, stating that they are authorised to submit the work by the copyright or rights holder.
+
+2.	Extent of the work's usage
+
+2.1.	The copyright holder agrees to ETH Library permanently using the work submitted as follows:
+
+	- Saving and archiving the work and the corresponding metadata on ETH Zurich's servers
+
+	- Extracting summaries (for examination papers)
+
+	- Publishing the work electronically via ETH Zurich's repository in accordance with the access mode selected
+
+	- Converting into other data formats for the purposes of long-term archiving
+
+	- Altering and/or enriching metadata; forwarding metadata to third parties
+
+2.2.	The copyright holder agrees that, in the event of the work being published via ETH Zurich's repository, the users are allowed to download and save it for personal use and non-commercial purposes. In any case, the terms of the end user licence also apply (can be assigned in the next step).
+
+3.	Examination papers
+
+3.1.	The electronic version of an examination paper must be identical to the printed version accepted by the examination boards.
+
+3.2.	Bachelor and Master theses as well as student papers are exclusively published with the consent of the supervisor.
+
+4.	Compliance with standards
+
+4.1.	The copyright holders undertake to comply with the standards set out in ETH Zurich's Compliance Guide and the Guidelines for Research Integrity at ETH Zurich. They especially confirm that all personal data has been anonymised and not integrated in the work without the written consent of the person affected.
+
+5.	Liability
+
+5.1.	The copyright holder or the author is responsible for the content of the work.
+
+5.2.	If the rights of third parties are infringed by the uses stipulated under section 2.1, especially the publication of the work via ETH Zurich's repository, and if the infringement can be ascribed to incorrect data from the copyright holder or the rights holders, he or she shall indemnify ETH Zurich against any claims from third parties.
+
+Status
+13.2.2017

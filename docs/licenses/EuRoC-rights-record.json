@@ -1,0 +1,24 @@
+{
+  "source": "https://www.research-collection.ethz.ch/items/bcaf173e-5dac-484b-bc37-faf97a594f1f",
+  "retrieved_date": "2026-11-01",
+  "rights": {
+    "dc.rights.license": [
+      {
+        "value": "In Copyright - Non-Commercial Use Permitted",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 0
+      }
+    ],
+    "dc.rights.uri": [
+      {
+        "value": "http://rightsstatements.org/page/InC-NC/1.0/",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 0
+      }
+    ]
+  }
+}

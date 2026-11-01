@@ -20,3 +20,6 @@
 __pycache__/
 *.bag
 *.partial
+
+/environment/fastest-map-localization-vio-plan.md
+/environment/vins-map-reuse-evaluation.md
