@@ -1,0 +1,56 @@
+{
+  "checked_at_utc": "2026-11-01T13:05:31.141049+00:00",
+  "repository": "https://github.com/Lin-Ruipeng/vins-fusion-map-localization",
+  "release": "https://github.com/Lin-Ruipeng/vins-fusion-map-localization/releases/tag/v0.1.0-euroc",
+  "anonymous_git_clone_commit": "ddf205c5cab7499d0ac3482e602484229be2601b",
+  "git_authentication_disabled": true,
+  "anonymous_readme_bytes_match": true,
+  "anonymous_trajectory_image_sha256": "61f8f438bb94614f28b9e86a1338c022cc1c3fee8e1d71f4de8edf91a682c07c",
+  "anonymous_full_image_download": {
+    "size_bytes": 1034676196,
+    "sha256": "a9b09423854831e44248f0eafe2f5244f360d9bbc4a4e1b06b67e8ad2771cd2c",
+    "matches_manifest": true,
+    "github_tokens_unset": true,
+    "local_candidate_url_override_unset": true
+  },
+  "release_asset_head_checks": [
+    {
+      "url": "https://github.com/Lin-Ruipeng/vins-fusion-map-localization/releases/download/v0.1.0-euroc/mh01-map.tar.gz",
+      "http_status": "200",
+      "exit_code": 0,
+      "error": ""
+    },
+    {
+      "url": "https://github.com/Lin-Ruipeng/vins-fusion-map-localization/releases/download/v0.1.0-euroc/vins-fusion-lab-kinetic-ceres1.14.tar.gz",
+      "http_status": "200",
+      "exit_code": 0,
+      "error": ""
+    },
+    {
+      "url": "https://github.com/Lin-Ruipeng/vins-fusion-map-localization/releases/download/v0.1.0-euroc/mh01-build-outputs.bag",
+      "http_status": "200",
+      "exit_code": 0,
+      "error": ""
+    },
+    {
+      "url": "https://github.com/Lin-Ruipeng/vins-fusion-map-localization/releases/download/v0.1.0-euroc/mh01-replay-check-outputs.bag",
+      "http_status": "200",
+      "exit_code": 0,
+      "error": ""
+    },
+    {
+      "url": "https://github.com/Lin-Ruipeng/vins-fusion-map-localization/releases/download/v0.1.0-euroc/mh02-localization-outputs.bag",
+      "http_status": "200",
+      "exit_code": 0,
+      "error": ""
+    },
+    {
+      "url": "https://github.com/Lin-Ruipeng/vins-fusion-map-localization/releases/download/v0.1.0-euroc/SHA256SUMS",
+      "http_status": "200",
+      "exit_code": 0,
+      "error": ""
+    }
+  ],
+  "all_uploaded_server_asset_digests_match": true,
+  "notes": "Full clean MH01->MH02 execution was completed before publication; the same image bytes were served anonymously from a local release rehearsal. This check then fetched the complete actual GitHub image without GH_TOKEN/GITHUB_TOKEN or an artifact URL override."
+}
